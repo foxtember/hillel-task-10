@@ -145,9 +145,7 @@ header{
     padding: 60px 0 47px 0;
     text-align: center;
 
-    // & :last-child{
-    //     margin-right: 0;
-    // }
+    font-size: 0;
 }
 
 $icon-size: 40px;
@@ -316,3 +314,88 @@ $icon-size: 40px;
         }
     }
 }
+
+.clients-container{
+    padding: 21px 0 41px 0;
+}
+
+.testimonials{
+    &-container{
+        width: 441px;
+    }
+
+    &-description{
+        font-size: 14px;
+        line-height: 24px;
+
+        margin-bottom: 24px;
+    }
+
+    &-author{
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+
+.customers{
+    &-container{
+        width: 480px;
+    }
+}
+
+.clients{
+    &-title{
+        display: inline-block;
+
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+
+        vertical-align: middle;
+        
+        &-icon{
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+        
+            margin-right: 15px;
+            margin-bottom: 15px;
+
+            vertical-align: middle;
+        }
+    }
+
+    $client-logo-width: 160px;
+
+    &-logos-container{
+        font-size: 0;
+        width: $client-logo-width*3;
+
+        .client-logo-wrapper{
+            display: inline-block;
+            vertical-align: top;
+            
+            position: relative;
+            box-sizing: border-box;
+
+            border: 1px solid #E8EBF1;
+
+            width: $client-logo-width;
+            height: 100px;
+
+            img{
+                position: absolute;
+                
+                left: 50%;
+                top: 50%;
+
+                transform: translateX(-50%) translateY(-50%);
+            }
+        }
+    }
+}
+
+
