@@ -13,6 +13,14 @@ header{
     background-color: #E8EBF1;
 }
 
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
 .content-block{
     max-width: 1000px;
 }
@@ -23,6 +31,11 @@ header{
 
 .clearfix{
     clear: both;
+}
+
+.separator{
+    height: 1px;
+    background-color: #DFE1E5;
 }
 
 .header-content{
@@ -226,8 +239,80 @@ $icon-size: 40px;
     }
 }
 
-.text-box-link::before{
-    content: url(../images/arrow.png);
-    position: absolute;
-    transform: translateX(-300%);
+.latest-works{
+    &-wrapper{
+        background: white;
+        padding-top: 16px;
+    }
+
+    &-container{
+        font-size: 0;
+    }
+
+    &-icon{
+        display: inline-block;
+
+        width: 14px;
+        height: 24px;
+
+        vertical-align: middle;
+
+        margin-right: 24px;
+    }
+
+    &-title{
+        display: inline-block;
+
+        line-height: 24px;
+        font-size: 15px;
+        font-weight: bold;
+
+        vertical-align: middle;
+
+        text-transform: uppercase;
+    }
+
+    &-navigation-icon{
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+
+        background-color: $main-color;
+
+        margin-left: 11px;
+
+        background-position: center;
+        background-size: 8px, 10px;
+        background-repeat: no-repeat;
+
+        &.prev-arrow-icon{
+            background-image: url("../images/nav-arrow-left.svg");
+        }
+
+        &.next-arrow-icon{
+            background-image: url("../images/nav-arrow-right.svg");
+        }
+    }
+
+    &-samples{
+        box-sizing: border-box;
+
+        margin-top: 16px;
+
+        padding-top: 20px;
+        padding-bottom: 40px;
+
+        border-top: 1px solid #DFE1E5;
+        border-bottom: 1px solid #DFE1E5;
+
+        text-align: center;
+    }
+
+    &-sample{
+        margin-right: 40px;
+
+        &:last-of-type{
+            margin-right: 0;
+        }
+    }
 }
