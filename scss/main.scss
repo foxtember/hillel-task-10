@@ -21,6 +21,14 @@ header{
     float: right;
 }
 
+.bold{
+    font-weight: bold;
+}
+
+.no-margin{
+    margin: 0;
+}
+
 .content-block{
     max-width: 1000px;
 }
@@ -229,7 +237,7 @@ $icon-size: 40px;
         vertical-align: middle;
 
         &::before{
-            content: url("../images/arrow.svg");
+            content: url("../images/read-more-arrow.svg");
 
             margin-right: 10px;
             vertical-align: 1px;
@@ -398,4 +406,149 @@ $icon-size: 40px;
     }
 }
 
+.call-to-action{
+    border: 1px solid #81E4ED;
+    box-sizing: border-box;
+
+    background-color: #E8FCFE;
+    padding: 35px 40px 35px 31px;
+    text-align: center;
+
+    &-description{
+        float: left;
+        font-size: 16px;
+        color: black;
+        width: 612px;
+        margin-right: 70px;
+        text-align: left;
+        line-height: 26px;
+    }
+
+    &-download{
+        float: right;
+        padding: 19px 19px 19px 19px;
+
+        border: 1px solid #2AACC8;
+        border-radius: 10px;
+        box-shadow: 0 2px 3px rgba(0,0,0,20%);
+        background: linear-gradient(to bottom, $main-color, #72DAE6, #60CEDE, $accent-color);
+
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
+
+    &-icon{
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+}
+
+
+.footer-content{
+    background-color: #E8EBF1;
+    padding: 30px 0 40px 0;
+    margin-top: 40px;
+
+    font-size: 0;
+
+    &-containers{
+        line-height: 20px;
+        color: black;
+    }
+}
+
+.about{
+    &-container{
+        vertical-align: top;
+        display: inline-block;
+        margin-left: 64px;
+
+        &:first-of-type{
+            margin-left: 0;
+        }
+    }
+
+    &-title{
+        font-size: 15px;
+        font-weight: bold;
+
+        margin-bottom: 20px;
+    }
+
+    &-description{
+        line-height: 20px;
+        font-size: 14px;
+        color: $text-color;
+
+        width: 237px;
+    }
+}
+
+.footer-text{
+    display: block;
+
+    color: $text-color;
+    font-size: 14px;
+
+    line-height: 20px;
+}
+
+.footer{
+    &-navigation-container{
+        a{
+            @extend .footer-text;
+
+            text-decoration: none;
+        }
+    }
+
+    &-copyright{
+
+        margin-top: 13px;
+
+        &-text{
+            width: 650px;
+
+            font-size: 13px;
+            color: $text-color;
+    
+            float: left;
+        }
+    }
+
+    &-logo{
+        width: 150px;
+        height: 56px;
+
+        float: right;
+    }
+}
+
+.contact-us-container{
+    span{
+        @extend .footer-text;
+    }
+}
+
+.social-media-links{
+    a{
+        width: 53px;
+        height: 51px;
+
+        margin-right: 17px;
+
+        float: left;
+
+        &:nth-of-type(3n){
+            margin: 0;
+        }
+    }
+
+    &-separator{
+        margin: 5px 0;
+    }
+}
 
