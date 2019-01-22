@@ -1,14 +1,15 @@
 {
-    "name": "parcel-project",
+    "name": "hillel-task-ten",
     "version": "0.0.1",
     "description": "",
     "keywords": [],
-    "author": "",
+    "author": "Olha`",
     "license": "ISC",
-    "dependencies": {
-        "parcel": "^1.11.0"
+    "scripts": {
+        "start": "npm install && npx parcel serve index.html --open"
     },
     "devDependencies": {
-        "sass": "^1.16.0"
+        "sass": "^1.16.0",
+        "parcel": "^1.11.0"
     }
 }
